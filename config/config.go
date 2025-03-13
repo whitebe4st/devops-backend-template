@@ -21,6 +21,7 @@ func NewConfig() *Config {
 	config := &Config{}
 
 	// Parse environment variables into the config struct
+	// edit
 	if err := env.Parse(config); err != nil {
 		log.Fatalln("Failed to parse environment variables into Config struct:", err)
 	}
